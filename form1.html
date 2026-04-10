@@ -1,0 +1,96 @@
+<html><head><title>BIODATA</title>
+<script language="javascript">
+function f1()
+{
+   document.getElementById("myimage").src="image1.jpg";
+ }
+function f2()
+{
+var regex=/^[a-zA-Z0-9.!#$%&'*+/=?^_'{|}~-]+@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9-]+)*$/;
+if(document.form1.pwd.value!=document.form1.cpwd.value)
+{alert("pwd and confirm pwd not same");}
+else if(document.form1.phone.value.length!=10)
+{alert("enter 10 digits valid number");}
+else if(!(document.form1.email.value.match(validregex)))
+{alert("enter valid email id");}
+else
+{document.form1.submit();}
+ }
+ function f3()
+ {
+ document.form1.sname.value=document.form1.sname.value.toUpperCase);
+ }
+</script>
+</head>
+<body>
+<br>
+<table align=center width=60% border=1>
+<caption><h1>BIODATA</h1></caption>
+<form name="form1" action="takedetails.jsp" method="post">
+
+<tr><td width=30% ><font size=5>ID</font></td>
+<td value="B200617" align=center><input type=text text="123" size=10 style="font-size:20px"  disabled></td></tr>
+<tr><td width=30% ><font size=5>Name</font></td>
+
+<td align=center><input type=text size=10 value="sname" id="sname" "style=font-size:20px"></td></tr>
+
+<tr><td width=30% ><font size=5>Email</font></td>
+<td align=center><input type=text size=10 width=60% style="font-size:20px"></td></tr>
+
+<tr><td width=30% ><font size=5>Phone no.</font></td>
+<td align=center><input type=text size=10 style="font-size:20px"></td></tr>
+
+<tr><td width=30% ><font size=5>Address</font></td>
+<td align=center><textarea cols=30 rows=4  style="font-size:20px"></textarea></td></tr>
+
+<tr><td width=30% ><font size=5>Country</font></td><td align=center >
+<select style="font-size:18px">
+<option value=i>INDIA</font></option>
+<option value=u>USA</font></option>
+<option value=e>ENGLAND</font></option></select></td></tr>
+
+<tr><td width=30% ><font size=5>DOB</font></td>
+<td align=center><input type=date size=10 style="font-size:20px"></td></tr>
+
+<tr><td width=30% ><font size=5>Gender</font></td><td align=center >
+<font size=5>male</font><input type=radio id=gender name=gender size=5 style="font-size:20px;height:30px;widht:30px">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font size=5>female</font><input type=radio id=gender name=gender size=5 style="font-size:20px;height:30px;widht:30px"></td></tr>
+
+<tr><td width=30% ><font size=5>Fov color</font></td><td align=center >
+<input type=color size=10 style="font-size:20px;"</td></tr>
+
+<tr><td width=30% ><font size=5>Branch</font></td><td align=center >
+<select style="font-size:20px">
+<option value=cse>CSE</font></option>
+<option value=ece>ECE</font></option>
+<option value=eee>EEE</font></option></select></td></tr>
+
+<tr><td width=30% ><font size=5>File</font></td><td align=center >
+<input type=file size=10 style="font-size:20px;"></td></tr>
+
+<tr><td width=60% ><font size=5>CGP rating</font></td><td align=center >
+<input type=range value=50 min=1 max=100 oninput="this.nextElementSibling.value=this.value">
+</td></tr>
+
+<tr><td width=30% ><font size=5>blog url</font></td><td align=center >
+<input type=url size=10 style="font-size:20px;"></td></tr>
+
+<tr><td width=30% ><font size=5>Password</font></td>
+<td align=center><input type=password id="pwd" size=10 style="font-size:20px"></td></tr>
+
+<tr><td width=30% ><font size=5>Conf.Password</font></td>
+<td align=center><input type=password id="cpwd" size=10 style="font-size:20px"></td></tr>
+
+</table>
+<table align=center>
+<!--<tr><td><button  size=50 style="font-size:25px">reset</button></td>
+<td><button size=50 style="font-size:25px">submit</button></td>
+<td><button size=50 style="font-size:25px">print</button></td></tr>-->
+<tr><td><input  size=50 type="reset" value="reset" style="font-size:25px"></td>
+<td><input size=50 type="submit" value="submit" style="font-size:25px"></td>
+<td><input size=50 type=submit value="print" style="font-size:25px" onclick="window.print()"></td>
+<td><input size=50 type="submit" value="close" style="font-size:25px" onclick="window.close()"></td></tr>
+</table>
+</body></html>
+

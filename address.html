@@ -1,0 +1,26 @@
+<html>
+<head> 
+ <script language="javascript">
+function  copyadd()
+{
+if(document.form1.checkadd.checked)
+{
+document.form1.padd.value=document.form1.cadd.value;
+}
+else
+{
+document.form1.padd.value="";
+}
+}
+ 
+</script>
+ </head>
+<body>
+ <form name="form1" action="insert.html" method="post"> 
+ <textarea id="cadd"  name="cadd"   ></textarea>
+<input type=checkbox    id="checkadd" name="checkadd" onChange="copyadd()"><br>
+ <textarea  id="padd" name="padd"></textarea>
+ 
+</form>
+</body>
+</html>

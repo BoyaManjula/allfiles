@@ -1,0 +1,44 @@
+<html>
+<head>
+<style>
+div{
+    text-align: center;
+
+    width:30%;
+    height: 50%;
+    background-color:chartreuse
+ }
+</style>
+</head>
+<script>
+function f1()
+{
+ var num1=document.form1.num.value;
+ if(num1.length<10)
+ {
+    alert("number doesn't cantain 10 digits");
+ }
+}
+function f2(){
+document.getElementById("image").style.width="100";
+}
+function f3()
+{
+document.getElementById("image").style.width="50";
+}
+</script>
+<body>
+    <form name="form1" action="take.html">
+    <center>
+<input type="number" name="num" placeholder="enter number"  >
+<input type="submit" value="submit " onclick="f1()">
+</form>
+<div>
+    <h3>notice board</h3>
+ <marquee direction="up"><a href="insert.html">insert</a><br><br>
+<a href="take.html">take data</a></marquee>
+</div>
+<img src="image.png" width="50"   id="image" onmouseover="f2()" onmouseout="f3()">
+</center>
+</body>
+</html>

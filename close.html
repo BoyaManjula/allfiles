@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Close Window Example</title>
+</head>
+<body>
+    <button onclick="closeWindow()">Close Window</button>
+
+    <script>
+        function closeWindow() {
+            // Check if the window was opened by a script
+            if (window.opener) {
+                window.close();
+            } else {
+                alert('This window cannot be closed by script.');
+            }
+        }
+    </script>
+</body>
+</html>
+

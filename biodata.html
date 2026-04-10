@@ -1,0 +1,141 @@
+<html>
+<head>
+    <title>BIO DATA</title>
+    <script language="javascript">
+    function f1()
+    {
+ 
+          document.getElementById("image").src="chotu.jpg";
+    }
+function f2()
+{
+var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+if(document.form1.pwd.value!=document.form1.cpwd.value)
+{
+alert("Password and Confirm Password are not same");
+}
+else if(document.form1.phone.value.length!=10)
+{
+alert("Enter valid mobile number of 10 digits");
+}
+else if(!(document.form1.email.value.match(validRegex)))
+{
+alert("Enter valid email id");
+}
+else
+{
+document.form1.submit();
+}
+}
+function f3()
+{
+document.form1.sname.value=document.form1.sname.value.toUpperCase();
+}
+function f4
+{
+ if(document.form1.chkaddr.checked)
+ {
+  document.form1.permanentaddr.value=document.form1.presentaddr.value;
+  }
+  else
+  {
+  document.form1.permanentaddr.value="";
+  }
+ }
+ function f5
+ {
+ document.getElementById("chkAddr").checked=false;
+ }
+ </script>
+</head>
+<body>
+<form name="form1" action="/biodata" method="post">
+
+<table border="1" width="150%" align="center">
+<P align="center"><font size="15" align="center">BIO DATA</font></P>
+<table align="center" width="85%" >
+    <tr>
+  <td><font size="5" color="red">ID</font></td><td><input type="text" style="font-size:20px;height:25px" name="ID" id="ID" placeholder="Enter your id" value="B200617" readonly></td>
+</tr>
+ <tr> 
+    <td><font size="5">Name:</font></td><td><input type="text" name="sname" style="font-size:20px;height:25px" id="sname" placeholder="Enter your name" onChange="f3()" required></td>
+</tr>
+ <tr>
+    <td><font size="5">Email</font></td><td><input type="email" name="email" style="font-size:20px;height:25px" id="email" placeholder="Enter your Email" ></td>
+   <p align=center>  <img id="image" width=100 height=100 border=2>
+    </p>
+    
+  <td ><font size="5">File:</font>
+ 
+  <input type=button value="upload your photo" width="10%"   size="5" style="font-size:20px;" 
+  onClick="f1()" ></td>
+ 
+</tr>
+
+<tr>
+<td><font size="5">Phone</font></td><td><input type="number" name="phone" style="font-size:20px;height:25px" id="phone" ></td>
+    
+<td><font size="5">Languages Known:</font>
+<input type="checkbox" name="lang" id="lang" style="font-size:20px;width:10px;height:25px;">
+<font size="5">Telugu</font>
+<input type="checkbox" name="lang" id="lang" style="font-size:20px;width:10x;height:25px;">
+<font size="5">English</font>
+<input type="checkbox" name="lang" id="lang" style="font-size:20px;width:10px;height:25px;">
+<font size="5">Hindi</font></td>
+</tr>
+
+<tr>
+  <td><font size="5">Address:</font></td><td><textarea cols="30" rows="5" size="50" 
+     placeholder="Enter your address" name="presentaddr" id="presentaddr" onchange="f5"
+        ></textarea></td>
+  <td><font size="5">CGPA:</font><input type="range" value="100" min="1"max="100" oninput="this.nextElementSibling.value=this.value"><output>100</output></td>
+</tr>
+
+<tr>
+<td><font size="5">DOB:</font></td><td><input type="date" name="dob" id="dob" style="font-size:20px;height:25px" placeholder="Enter date" ></td>
+    
+<td><font size="5">Blog Url:</font>
+<input type="url" name="blog" id="blog" size="15" style="font-size:20px;"></td>
+</tr>
+
+<tr>
+    <td><font size="5">Gender</font></td><td>
+    <input type="radio" name="gender" id="gender"><font size="5">Male</font>
+    <input type="radio" name="gender" id="gender"><font size="5">Female</font></td>
+    
+<td><font size="5">Password</font><font size="5"><input type="password" id="pwd" name="pwd" size="15" placeholder="enter password" style="font-size:20px;"></font></td>
+</tr>
+
+<tr>
+    <td><font size="5">Color</font></td><td>
+    <input type="color" style="font-size:20px;height:25px"    name="color" id="color" ></td>
+    
+    <td><font size="5">Confirm Password:</font> 
+    <font size="5"><input type="password" id="cpwd" name="cpwd" size="15" placeholder="confirm password" style="font-size:20px;" required></font></td>
+</tr>
+
+<tr>
+    <td><font size="5">Branch:</font></td><td><select style="font-size:20px;height:25px">
+   <option value="select your branch">Select Your Branch</option>
+    <option value="cse">CSE</option>
+    <option value="ece">ECE</option>
+    <option value="eee">EEE</option>
+    <option value="ce">CE</option>
+    <option value="me">ME</option>
+    <option value="mme">MME</option>
+ </select></td> 
+ 
+<td><input type="submit" value="submit" style="font-size:20px;height:25px" onClick="f2()"> 
+ 
+     <input type="reset" value="reset" style="font-size:20px;height:25px">  
+     <input type="button" value="print" style="font-size:20px;height:25px" onclick="window.print()" > 
+     <input type="button" value="close" style="font-size:20px;height:25px" onClick="window.close()" > 
+  </td>
+     
+</tr>
+</table>
+</table>
+</form>
+   </body>
+   </html>

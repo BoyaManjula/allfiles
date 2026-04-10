@@ -1,0 +1,22 @@
+<html>
+<head>
+    <script lang="javascript">
+    function f1()
+    {
+    var p=document.getElementById("pwd");
+    if(p.type=="password")
+    {
+        p.type="text";
+    }
+    else 
+    p.type="password";
+}
+    </script>
+</head>
+<body>
+         <div>show pwd
+            <input type="checkbox" id="cb" onclick="f1()">
+            <input type="password" id="pwd">
+         </div>
+ </body>
+</html>

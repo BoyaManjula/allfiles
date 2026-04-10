@@ -1,0 +1,46 @@
+<!--<html>
+<head>
+ <script lang="javascript">
+ function f1()
+ {
+   var p=document.form1.phone.value;
+   if(p.length!=10)
+   {
+      alert("enter 10 digits only");
+   }
+    
+ }
+  
+ </script>
+ </head>
+ <body>
+ <form name="form1" action="/action">
+ <input type="number" id="phone" name="phone" placeholder="enter number">
+ <input type="submit" id="submit" name="submit" onclick="f1()">
+  </form></body>
+ </html>-->
+ <html>
+  <head>
+    <script lang="javascript">
+      function f1()
+      {
+       //document.getElementById("image").style.width="50";
+          document.form1.image.width="50"; 
+ 
+      }
+      function f2()
+      {
+       //document.getElementById("image").style.width="100";
+                 document.form1.image.width="150";
+      }
+    </script>
+  </head>
+  <body  background="chotu.jpg">
+  <center>
+    <form name="form1" action="/action"> 
+  <img src="chotu.jpg"  width="50" id="image" name="image" onmouseover="f2()" onmouseout="f1()">
+ 
+</form>
+</center> 
+</body>
+ </html>

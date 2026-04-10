@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>prachodayan</title>
+<script language="javascript">
+function f1()
+{
+ var c=prompt("enter ur fav color");
+ document.body.style.backgroundColor=c;
+ }
+function f2()
+{
+ alert("hi friends");
+ }
+function f3()
+{
+ var c=prompt("enter your text");
+ document.getElementById("mytext").innerHTML=c;
+}
+function f4()
+{
+  document.getElementById("myImage").src="i.jpg";
+ }
+function f5()
+{
+ if(confirm("are you sure to unload image?"))
+ {
+  document.getElementById("myImage").src="";
+ }
+}
+</script>
+</head>
+ <body onLoad="f1()">
+ <!--<br><br><br><br>-->
+<table border=2 align=center width=60%>
+<tr>
+<td align=center><input type=button value="greet all" onClick="f2()" size=5 >
+</td>
+
+<td><font size=5><p id="mytext"></p></font><br><input type=button value="enter your text" onClick="f3()" size=5 style="font-size:32px"></td></tr>
+
+<tr>
+<td align=right><input type=button value="upload your Image" onClick="f4()" size=5 style="font-size:32px"><br><input type=button value="remove your image" onClick="f5()" size=5 style="font-size:32px">
+</td>
+
+<!--<td><img id="myImage" width=250></td>-->
+
+<td><img id="myImage" width=250></td></tr>
+</table>
+</body>
+</html>
+ 
+ 
+ 

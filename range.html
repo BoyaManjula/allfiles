@@ -1,0 +1,28 @@
+<html>
+<head>
+    <script language="JavaScript">
+    function f1(){
+    document.form1.getElementById("myimg").src="";
+    }
+ function f2(){
+    document.form1.getElementById("myimg").src="image.png";
+
+ }
+</script>
+</head>
+<body>
+    <form name="form1"> 
+<input type="range" value="50" min="1" max="100" oninput="this.nextElementSibling.value=this.value">
+<output>50</output><br><br>
+<input type="date"><br><br>
+<input type="time"><br><br>
+<img name="myimg" id="myimg">
+<img name="myimg" id="myimg">
+<input type="button" value="image upload" onclick="f2()">
+<input type="button" value="image onload" onclick="f1()">
+<input type="week"  placeholder="week">
+</form>
+</body>
+</html>
+
+ 

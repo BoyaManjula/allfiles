@@ -1,0 +1,58 @@
+<html>
+    <head>
+    <style>
+   .mybutton{
+    background-color: black;
+    border-radius: 50px;
+    font-size: 20px;
+    color: black;
+    height: 50px;
+    width: 50px;
+   }
+    </style>
+    <script language="javascript">
+        function f1(value)
+        {
+            if(value=="start")
+            {
+                document.getElementById("redbutton").style.background="black";
+                document.getElementById("yellowbutton").style.background="black";
+                document.getElementById("greenbutton").style.background="green";
+             }
+            else if(value=="slow")
+            {
+                document.getElementById("redbutton").style.background="black";
+                document.getElementById("yellowbutton").style.background="yellow";
+                document.getElementById("greenbutton").style.background="black";
+             }
+             else if(value=="stop")
+            {
+                document.getElementById("redbutton").style.background="red";
+                document.getElementById("yellowbutton").style.background="black";
+                document.getElementById("greenbutton").style.background="black";
+             }
+             else
+            {
+                document.getElementById("redbutton").style.background="black";
+                document.getElementById("yellowbutton").style.background="black";
+                document.getElementById("greenbutton").style.background="black";
+             } 
+
+        }
+    </script>
+    </head>
+    <body>
+        <br><br>
+    <table class="mytable" width="20%" align="center" >
+<tr><td><input type="button" class="mybutton" id="redbutton" name="redbutton"></td></tr>
+<tr><td><input type="button" class="mybutton" id="yellowbutton" name="yellowbutton"></td></tr>
+<tr><td><input type="button" class="mybutton" id="greenbutton" name="greenbutton"></td></tr>
+ 
+<br><br>
+<tr><td><input type="button" value="start" onClick="f1('start')"></td></tr>
+<tr><td><input type="button" value="slow" onClick="f1('slow')"></td></tr>
+<tr><td><input type="button" value="stop" onClick="f1('stop')"></td></tr>
+
+  <!-- </table>-->
+</body>
+</html>
